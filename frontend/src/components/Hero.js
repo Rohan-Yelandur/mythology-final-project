@@ -10,7 +10,7 @@ function Hero() {
     <ScrollExpand
       src="/ship_sunrise_painting.jpg"
       alt="Painting of a ship at sunrise"
-      title="The Odyssey"
+      title="Your Odyssey"
       startWidth={(size / width) * 100}
       startHeight={(size / height) * 100}
       scrollHint={

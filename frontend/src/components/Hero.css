@@ -7,16 +7,11 @@
   display: block;
 }
 
-@media (max-width: 767px) {
-  .scroll-expand__media {
-    object-position: 90% center;
-  }
-}
-
 .scroll-expand__title {
   color: #f1e6cf;
-  font-size: min(21vw, 17.5vh);
+  font-size: min(18.5vw, 17.5vh);
   white-space: nowrap;
+  text-shadow: none;
 }
 
 .hero-heading {
@@ -50,4 +45,18 @@
   font-family: var(--font-secondary);
   font-size: 0.75rem;
   text-align: right;
+}
+
+@media (max-width: 767px) {
+  .scroll-expand__media {
+    object-position: 90% center;
+  }
+
+  .scroll-expand__title {
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.8);
+  }
+
+  .hero-subheading {
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.9), 0 0 8px rgba(0, 0, 0, 0.8), 0 2px 16px rgba(0, 0, 0, 0.8);
+  }
 }

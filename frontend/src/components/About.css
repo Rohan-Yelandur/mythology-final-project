@@ -1,0 +1,22 @@
+.about {
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  color: #f1e6cf;
+  font-family: var(--font-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-heading {
+  margin: 0 0 1rem;
+  font-family: var(--font-main);
+  font-size: 2.5rem;
+  color: #d4a64a;
+  text-align: center;
+}
