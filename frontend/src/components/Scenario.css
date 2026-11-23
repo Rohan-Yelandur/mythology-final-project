@@ -1,0 +1,51 @@
+.scenario {
+  box-sizing: border-box;
+  min-height: 100vh;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  color: #f1e6cf;
+  font-family: var(--font-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.scenario-title {
+  margin: 0.25rem 0 0;
+  font-family: var(--font-main);
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+.scenario-citation {
+  margin: 0.25rem 0 1.5rem;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.scenario-setup {
+  margin: 0 0 2rem;
+}
+
+.scenario-choices .ag-panel--selected {
+  box-shadow: 0 0 0 3px #d4a64a;
+}
+
+.scenario-choices .ag-panel__bar {
+  display: none;
+}
+
+.scenario-reveal {
+  margin-top: 2rem;
+}
+
+.scenario-reveal h3 {
+  margin: 1.5rem 0 0.25rem;
+  color: #d4a64a;
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+}
+
+.scenario-reveal p {
+  margin: 0;
+}

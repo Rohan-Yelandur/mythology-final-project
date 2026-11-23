@@ -11,8 +11,8 @@ function About() {
         In some you'll act as Odysseus, and in others you will be one of his crew.
       </p>
       <p>
-        Each scenario gives you two choices. Pick whichever feels right to you. After you choose, you'll see
-        what happened in the original story, how all other players chose, and what the choices made mean.
+        Each scenario will present you with two choices, and you can pick whichever feels right. After you choose, you'll see
+        what happened in the original story, how all other players chose, and what the choices you made mean.
       </p>
     </section>
   );

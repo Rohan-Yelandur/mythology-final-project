@@ -1,0 +1,15 @@
+[
+  {
+    "id": "cattle-of-helios",
+    "title": "The Cattle of Helios",
+    "citation": "Book 12, lines 260-419",
+    "setup": "Your ship is stranded on Thrinacia, the island where the sun god Helios keeps his cattle. The winds have you trapped here for a month and the food is gone.",
+    "choices": [
+      { "id": "starve", "text": "Respect the gods and starve", "image": "/cattle_of_helios1.jpg" },
+      { "id": "eat", "text": "Eat the cattle to survive", "image": "/cattle_of_helios2.jpg" }
+    ],
+    "poemChoice": "eat",
+    "outcome": "cow is gone :(",
+    "analysis": "gonna write eventually "
+  }
+]
