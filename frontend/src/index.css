@@ -5,13 +5,6 @@
 
 html, body {
   margin: 0;
-  padding: 0;
   background-color: black;
   font-family: var(--font-main);
-  scrollbar-width: none;
-}
-
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {
-  display: none;
 }

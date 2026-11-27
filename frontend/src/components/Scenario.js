@@ -1,18 +1,8 @@
 import { useState } from 'react';
-import AccordionGallery from './AccordionGallery';
 import './Scenario.css';
 
 function Scenario({ scenario }) {
   const [chosen, setChosen] = useState(null);
-
-  const items = scenario.choices.map((choice, i) => ({
-    image: choice.image,
-    align: i === 0 ? 'right' : 'left',
-    selected: choice === chosen,
-    label: choice === chosen ? `✓ ${choice.text}` : choice.text
-  }));
-
-  const poemChoice = scenario.choices.find((choice) => choice.id === scenario.poemChoice);
 
   return (
     <section className="scenario">
@@ -20,34 +10,32 @@ function Scenario({ scenario }) {
       <p className="scenario-citation">{scenario.citation}</p>
       <p className="scenario-setup">{scenario.setup}</p>
 
+      <div className="scenario-image">
+        <img src={scenario.image} alt={scenario.title} />
+        <p className="scenario-image-credit">{scenario.imageCredit}</p>
+      </div>
+
       <div className="scenario-choices">
-        <AccordionGallery
-          items={items}
-          defaultIndex={-1}
-          expandRatio={0.75}
-          height={620}
-          gap={4}
-          tilt={0}
-          accentColor="#d4a64a"
-          overlayColor="#000000"
-          textColor="#f1e6cf"
-          onSelect={(i) => setChosen(scenario.choices[i])}
-        />
+        {scenario.choices.map((choice) => (
+          <button
+            key={choice.id}
+            className={choice === chosen ? 'scenario-choice selected' : 'scenario-choice'}
+            onClick={() => setChosen(choice)}
+          >
+            {choice.text}
+          </button>
+        ))}
       </div>
 
       {chosen && (
         <div className="scenario-reveal">
-          <h3>What happened</h3>
-          <p>
-            In the story: <strong>{poemChoice.text}</strong>
-          </p>
-          <p>{scenario.outcome}</p>
-
           <h3>How others chose</h3>
           <p>No votes yet.</p>
 
-          <h3>What it means</h3>
-          <p>{scenario.analysis}</p>
+          <h3>Analysis</h3>
+          {scenario.analysis.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
         </div>
       )}
     </section>

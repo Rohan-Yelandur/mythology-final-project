@@ -11,7 +11,7 @@
 }
 
 .scenario-title {
-  margin: 0.25rem 0 0;
+  margin: 0;
   font-family: var(--font-main);
   font-size: 2.5rem;
   line-height: 1.1;
@@ -27,12 +27,51 @@
   margin: 0 0 2rem;
 }
 
-.scenario-choices .ag-panel--selected {
-  box-shadow: 0 0 0 3px #d4a64a;
+.scenario-image {
+  position: relative;
+  max-width: 50rem;
+  margin: 0 auto 1.5rem;
 }
 
-.scenario-choices .ag-panel__bar {
-  display: none;
+.scenario-image img {
+  display: block;
+  width: 100%;
+}
+
+.scenario-image-credit {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  max-width: 60%;
+  margin: 0;
+  color: white;
+  text-shadow: 0 1px 4px black;
+  font-size: 0.85rem;
+  text-align: right;
+}
+
+.scenario-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.scenario-choice {
+  padding: 1rem;
+  border: 3px solid rgba(241, 230, 207, 0.4);
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.scenario-choice:hover {
+  border-color: #f1e6cf;
+}
+
+.scenario-choice.selected {
+  border-color: #d4a64a;
 }
 
 .scenario-reveal {
@@ -48,4 +87,8 @@
 
 .scenario-reveal p {
   margin: 0;
+}
+
+.scenario-reveal p + p {
+  margin-top: 0.75rem;
 }

@@ -8,5 +8,4 @@ In this choose your own adventure game, users relive the trials and tribulations
 - Painting: J.M.W. Turner, *Ulysses Deriding Polyphemus* (1829), National Gallery, London
 - Sculpture: Head of Odysseus, Sperlonga group
 - Cattle of Helios images: Sanctuary of Echoes Art
-- Animations: [React Bits](https://reactbits.dev)
 - Icons: [react-icons](https://react-icons.github.io/react-icons/)

@@ -1,17 +1,26 @@
-.scroll-expand__hint {
-  font-family: var(--font-secondary);
-  color: white;
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.hero-arrow {
-  display: block;
+.hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.scroll-expand__title {
-  color: #f1e6cf;
-  font-size: min(18.5vw, 17.5vh);
-  white-space: nowrap;
-  text-shadow: none;
+.hero-text {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  text-align: center;
 }
 
 .hero-heading {
@@ -19,17 +28,15 @@
   color: #f1e6cf;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
   font-size: min(11vw, 10vh);
-  font-weight: 700;
-  letter-spacing: -0.03em;
   line-height: 1;
 }
 
 .hero-subheading {
-  margin: 0 0 0.5em;
+  margin: 0.75em 0 0;
   color: #d4a64a;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.85);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
   font-family: var(--font-secondary);
-  font-size: min(3.8vw, 3vh);
+  font-size: min(4vw, 3vh);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -48,15 +55,7 @@
 }
 
 @media (max-width: 767px) {
-  .scroll-expand__media {
+  .hero-image {
     object-position: 90% center;
-  }
-
-  .scroll-expand__title {
-    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.8);
-  }
-
-  .hero-subheading {
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.9), 0 0 8px rgba(0, 0, 0, 0.8), 0 2px 16px rgba(0, 0, 0, 0.8);
   }
 }
