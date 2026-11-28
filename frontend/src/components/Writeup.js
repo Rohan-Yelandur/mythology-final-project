@@ -22,6 +22,11 @@ function Writeup() {
 
       <img src="/vercel_deployment.png" alt="The production deployment on Vercel" />
       <p>The finished site deployed on Vercel from the main branch.</p>
+
+      <h2>Citations</h2>
+      <p>
+        Homer. <em>The Odyssey</em>. Translated by Emily Wilson, W. W. Norton &amp; Company, 2018.
+      </p>
     </main>
   );
 }

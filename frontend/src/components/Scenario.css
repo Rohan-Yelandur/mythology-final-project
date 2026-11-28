@@ -28,7 +28,6 @@
 }
 
 .scenario-image {
-  position: relative;
   max-width: 50rem;
   margin: 0 auto 1.5rem;
 }
@@ -39,14 +38,9 @@
 }
 
 .scenario-image-credit {
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-  max-width: 60%;
-  margin: 0;
-  color: white;
-  text-shadow: 0 1px 4px black;
+  margin: 0.5rem 0 0;
   font-size: 0.85rem;
+  opacity: 0.7;
   text-align: right;
 }
 

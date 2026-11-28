@@ -6,7 +6,8 @@
   font-family: serif;
 }
 
-.writeup h1 {
+.writeup h1,
+.writeup h2 {
   text-align: center;
 }
 

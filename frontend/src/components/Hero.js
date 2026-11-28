@@ -9,7 +9,7 @@ function Hero() {
         <p className="hero-subheading">Odyssey Edition</p>
       </div>
       <p className="hero-credit">
-        J.M.W. Turner, <em>Ulysses Deriding Polyphemus</em> (1829), National Gallery, London
+        J.M.W. Turner, 1829
       </p>
     </section>
   );

@@ -2,13 +2,13 @@
   {
     "id": "cicones",
     "title": "The Cicones",
-    "citation": "Book 9, lines ...",
+    "citation": "Book 9, lines 40-66",
     "image": "/cicones.jpg",
-    "imageCredit": "alamy.com",
-    "setup": "Your first stop after Troy is Ismarus, the city of the Cicones. You and the crew have sacked the city and divided the treasure. Odysseus tells everyone to leave right away, but there is still wine to drink and sheep and cattle to feast on along the shore.",
+    "imageCredit": "Theodoor van Thulden, 1632",
+    "setup": "Your first stop after Troy is Ismarus, the city of the Cicones peoples. Your crew sacked the city and divied up the treasure, and you are told to leave right away. Yet, when you look around, there's still wine to drink and sheep and cattle to eat.",
     "choices": [
-      { "id": "leave", "text": "Leave with Odysseus right away" },
-      { "id": "stay", "text": "Stay on the beach and feast" }
+      { "id": "leave", "text": "Leave right away" },
+      { "id": "stay", "text": "Stay and feast" }
     ],
     "poemChoice": "stay",
     "analysis": [
@@ -18,13 +18,13 @@
   {
     "id": "lotus-eaters",
     "title": "The Lotus-Eaters",
-    "citation": "Book 9, lines ...",
+    "citation": "Book 9, lines 84-105",
     "image": "/lotus_eaters.jpg",
-    "imageCredit": "[Image credit: ...]",
-    "setup": "After nine days blown off course by storms, your ship reaches the land of the Lotus-Eaters. Odysseus sends you and two other men ahead to find out who lives there. The people are friendly, and they offer you the lotus to eat.",
+    "imageCredit": "Painting of the Lotus-Eaters signed NB",
+    "setup": "After 9 days blown off course by storms, your ship reaches the land of the Lotus-Eaters. The people are friendly, and they offer you the lotus flower to eat. Eating it makes you feel a sweet, peaceful Euphoria. Yet, with each bite you feel your image of home slipping.",
     "choices": [
-      { "id": "refuse", "text": "Refuse the lotus and report back to the ship" },
-      { "id": "eat", "text": "Eat the lotus" }
+      { "id": "refuse", "text": "Stop eating the lotus and keep sailing" },
+      { "id": "eat", "text": "Eat the lotus and feel happiness forever" }
     ],
     "poemChoice": "eat",
     "analysis": [
@@ -34,10 +34,10 @@
   {
     "id": "polyphemus",
     "title": "Polyphemus",
-    "citation": "Book 9, lines ...",
+    "citation": "Book 9, lines 106-566",
     "image": "/polyphemus.jpg",
-    "imageCredit": "Arnold Böcklin, Odysseus and Polyphemus (1896), Museum of Fine Arts, Boston",
-    "setup": "You are Odysseus. You blinded the Cyclops Polyphemus and escaped his cave by hiding your men under his sheep, and he still thinks your name is Nobody. Now your ship is pulling away from the shore, and he is raging on the cliffs.",
+    "imageCredit": "Arnold Böcklin, 1896",
+    "setup": "You landed on the Island of the Cyclops, and got trapped in his cave. You escaped by blinding the Cyclops Polyphemus and hiding your men under his sheep. He still thinks your name is Nobody. Now your ship is pulling away from the shore, and he is raging at you on the cliffs.",
     "choices": [
       { "id": "silent", "text": "Row away in silence" },
       { "id": "shout", "text": "Shout your real name at Polyphemus" }
@@ -48,12 +48,28 @@
     ]
   },
   {
+    "id": "scylla",
+    "title": "Scylla and Charybdis",
+    "citation": "Book 12, lines 201-259",
+    "image": "/scylla.png",
+    "imageCredit": "Gino D'Antonio, 1968",
+    "setup": "Your ship must pass through a narrow strait between the sea monster Scylla and the whirlpool Charybdis. Scylla could grab your men and eat them, while the whirlpool could swallow the whole ship. The goddess Circe told you to steer close to Scylla and accept the guaranteed loss of 6 men. However, you could face Charybdis and try to fight it off, potentially saving them all.",
+    "choices": [
+      { "id": "silent", "text": "Steer toward the monster" },
+      { "id": "warn", "text": "Head toward the whirlpool" }
+    ],
+    "poemChoice": "silent",
+    "analysis": [
+      "[Analysis: ...]"
+    ]
+  },
+  {
     "id": "cattle-of-helios",
     "title": "The Cattle of Helios",
-    "citation": "Book ... lines ...",
+    "citation": "Book 12 lines 260-418",
     "image": "/cattle_of_helios.jpg",
-    "imageCredit": "Sanctuary of Echoes Art",
-    "setup": "Your ship is stranded on Thrinacia, the island where the sun god Helios keeps his cattle. The winds have you trapped here for a month and the food is gone. Circe and Tiresias have both warned you that eating the cattle will curse you and your crew.",
+    "imageCredit": "Sanctuary of Echoes, 2026",
+    "setup": "Your ship is stranded on Thrinacia, the island where the sun god Helios keeps his cattle. The winds have you trapped here for a month and the food is dwindling. Circe and Tiresias have both warned you that eating the cattle will curse you and your crew.",
     "choices": [
       { "id": "starve", "text": "Respect the gods and potentially starve" },
       { "id": "eat", "text": "Eat the cattle to survive, but break your oath" }
@@ -67,13 +83,13 @@
   {
     "id": "calypso",
     "title": "Calypso's Offer",
-    "citation": "Book 5, lines ...",
+    "citation": "Book 5, lines 148-280",
     "image": "/calypso.jpg",
-    "imageCredit": "Arnold Böcklin, Odysseus and Calypso (1882)",
-    "setup": "You are Odysseus. After the shipwreck you washed up on the island of the goddess Calypso, and you have been there for seven years. The gods have ordered her to let you go home, but she tells you that if you stay with her, she will make you immortal and ageless.",
+    "imageCredit": "Arnold Böcklin, 1882",
+    "setup": "You have shipwreck and washed up on the island of the goddess Calypso. You've lost count of time but you have been there for 7 years. The gods have ordered her to let you go home, but she tells you that if you stay with her, she will make you immortal and ageless.",
     "choices": [
-      { "id": "leave", "text": "Leave for Ithaca and stay mortal" },
-      { "id": "stay", "text": "Stay with Calypso and become immortal" }
+      { "id": "leave", "text": "Leave for Ithaca" },
+      { "id": "stay", "text": "Stay with Calypso" }
     ],
     "poemChoice": "leave",
     "analysis": [
@@ -83,13 +99,13 @@
   {
     "id": "return-to-ithaca",
     "title": "Return to Ithaca",
-    "citation": "Books 17-18, lines ...",
+    "citation": "Books 17, 355-491 ",
     "image": "/return_to_ithaca.jpg",
-    "imageCredit": "Claude Lorrain, The Embarkation of Ulysses (1646), Musée du Louvre, Paris",
-    "setup": "You are Odysseus, home at last after twenty years. Athena has disguised you as an old beggar, and the suitors who want to marry your wife are feasting in your hall. When you ask them for food, the suitor Antinous insults you and throws a footstool at you.",
+    "imageCredit": "Claude Lorrain, 1646",
+    "setup": "You are home at last after 20 years. Athena has disguised you as an old beggar, and the suitors who want to marry your wife are feasting in your hall. When you ask them for food, the suitor Antinous insults you and throws stuff at you.",
     "choices": [
       { "id": "endure", "text": "Endure it and keep your disguise" },
-      { "id": "fight", "text": "Fight back and reveal who you are" }
+      { "id": "fight", "text": "Reveal who you are" }
     ],
     "poemChoice": "endure",
     "analysis": [
