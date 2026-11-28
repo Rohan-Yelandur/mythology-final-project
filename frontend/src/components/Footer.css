@@ -13,6 +13,16 @@
   justify-content: flex-end;
 }
 
+.footer-writeup {
+  margin-bottom: 1rem;
+  color: #d4a64a;
+  font-size: 1.5rem;
+}
+
+.footer-writeup:hover {
+  color: #f1e6cf;
+}
+
 .footer-bottom {
   display: flex;
   align-items: center;

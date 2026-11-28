@@ -5,6 +5,9 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-info">
+        <a className="footer-writeup" href="/writeup">
+          Read the project writeup
+        </a>
         <div className="footer-bottom">
           <p className="footer-credit">
             Built by Rohan Yelandur for Introduction to Classical Mythology @ UT Austin, Fall 2026

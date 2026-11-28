@@ -10,11 +10,11 @@ function About({ started, onStart }) {
         facing the same trials and tribulations from the famous voyage.
         In some you'll act as Odysseus, and in others you will be one of his crew.
       </p>
+      <img className="about-map" src="/greece_map.png" alt="Map of Odysseus' possible route home across the Mediterranean" />
       <p>
         Each scenario will present you with two choices, and you can pick whichever feels right. After you choose, you'll see
         what happened in the original story, how all other players chose, and what the choices you made mean.
       </p>
-      <img className="about-map" src="/greece_map.png" alt="Map of Odysseus' possible route home across the Mediterranean" />
       {!started && (
         <button className="about-button" onClick={onStart}>
           Set sail
