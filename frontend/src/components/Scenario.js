@@ -47,7 +47,8 @@ function Scenario({ scenario, chosen, onChoose, showContinue, continueText, onCo
           ) : (
             scenario.choices.map((choice) => (
               <p key={choice.id}>
-                {Math.round((Number(votes[choice.id] || 0) / totalVotes) * 100)}% chose "{choice.text}"
+                {Math.round((Number(votes[choice.id] || 0) / totalVotes) * 100)}% chose "{choice.text}" (
+                {Number(votes[choice.id] || 0)} votes)
               </p>
             ))
           )}
