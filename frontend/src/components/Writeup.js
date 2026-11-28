@@ -6,22 +6,28 @@ function Writeup() {
       <a href="/">Back to the game</a>
       <h1>Project Writeup</h1>
 
-      <p>i built my project by...</p>
+      <p>
+        I built my project using the JavaScript coding language and React user-interface framework.
+        Below are some snapshots of the process...
+      </p>
 
       <img src="/no_styling.PNG" alt="Unstyled version of the site" />
-      <p>A recreation of the page before any styling, with just the content and browser defaults.</p>
+      <p>The initial website before styling and other images added in.</p>
 
       <img src="/scenario_json.png" alt="scenarios.json open in VS Code" />
-      <p>All of the scenarios live in one JSON file, so they can be added or changed without touching the components.</p>
+      <p>
+        I built the site using the JavaScript coding language and the React framework, all inside
+        of VS Code.
+      </p>
 
       <img src="/mobile.png" alt="The site in Chrome's phone view" />
-      <p>Testing the layout on a phone screen with Chrome DevTools.</p>
+      <p>I styled using CSS and tested the website using DevTools to make sure it worked on all types of devices, including mobile.</p>
 
       <img src="/upstash.png" alt="Vote counts in the Upstash Redis Data Browser" />
-      <p>Votes are stored in Upstash Redis, with one hash of counts per scenario.</p>
+      <p>I track a count of how many of each choice were per scenario. These selections are stored in a database called Upstash Redis.</p>
 
       <img src="/vercel_deployment.png" alt="The production deployment on Vercel" />
-      <p>The finished site deployed on Vercel from the main branch.</p>
+      <p>I host the website on Vercel, which runs the serverless function needed to track players' choices.</p>
 
       <h2>Citations</h2>
       <p>
