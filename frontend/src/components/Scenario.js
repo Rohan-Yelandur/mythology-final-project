@@ -1,6 +1,21 @@
+import { useEffect, useState } from 'react';
 import './Scenario.css';
 
-function Scenario({ scenario, chosen, onChoose, showContinue, onContinue }) {
+function Scenario({ scenario, chosen, onChoose, showContinue, continueText, onContinue }) {
+  const [votes, setVotes] = useState({});
+
+  useEffect(() => {
+    fetch(`/api/votes?scenario=${scenario.id}`)
+      .then((response) => response.json())
+      .then((data) => setVotes(data))
+      .catch(() => setVotes({}));
+  }, [scenario.id]);
+
+  let totalVotes = 0;
+  scenario.choices.forEach((choice) => {
+    totalVotes += Number(votes[choice.id] || 0);
+  });
+
   return (
     <section className="scenario">
       <h2 className="scenario-title">{scenario.title}</h2>
@@ -27,7 +42,15 @@ function Scenario({ scenario, chosen, onChoose, showContinue, onContinue }) {
       {chosen && (
         <div className="scenario-reveal">
           <h3>How others chose</h3>
-          <p>No votes yet.</p>
+          {totalVotes === 0 ? (
+            <p>No votes yet.</p>
+          ) : (
+            scenario.choices.map((choice) => (
+              <p key={choice.id}>
+                {Math.round((Number(votes[choice.id] || 0) / totalVotes) * 100)}% chose "{choice.text}"
+              </p>
+            ))
+          )}
 
           <h3>Analysis</h3>
           {scenario.analysis.map((paragraph) => (
@@ -38,7 +61,7 @@ function Scenario({ scenario, chosen, onChoose, showContinue, onContinue }) {
 
       {chosen && showContinue && (
         <button className="scenario-continue" onClick={onContinue}>
-          Continue
+          {continueText}
         </button>
       )}
     </section>
