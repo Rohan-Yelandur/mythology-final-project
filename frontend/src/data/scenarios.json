@@ -1,8 +1,56 @@
 [
   {
+    "id": "cicones",
+    "title": "The Cicones",
+    "citation": "Book 9, lines ...",
+    "image": "/cicones.jpg",
+    "imageCredit": "alamy.com",
+    "setup": "Your first stop after Troy is Ismarus, the city of the Cicones. You and the crew have sacked the city and divided the treasure. Odysseus tells everyone to leave right away, but there is still wine to drink and sheep and cattle to feast on along the shore.",
+    "choices": [
+      { "id": "leave", "text": "Leave with Odysseus right away" },
+      { "id": "stay", "text": "Stay on the beach and feast" }
+    ],
+    "poemChoice": "stay",
+    "analysis": [
+      "Analysis..."
+    ]
+  },
+  {
+    "id": "lotus-eaters",
+    "title": "The Lotus-Eaters",
+    "citation": "Book 9, lines ...",
+    "image": "/lotus_eaters.jpg",
+    "imageCredit": "[Image credit: ...]",
+    "setup": "After nine days blown off course by storms, your ship reaches the land of the Lotus-Eaters. Odysseus sends you and two other men ahead to find out who lives there. The people are friendly, and they offer you the lotus to eat.",
+    "choices": [
+      { "id": "refuse", "text": "Refuse the lotus and report back to the ship" },
+      { "id": "eat", "text": "Eat the lotus" }
+    ],
+    "poemChoice": "eat",
+    "analysis": [
+      "Analysis..."
+    ]
+  },
+  {
+    "id": "polyphemus",
+    "title": "Polyphemus",
+    "citation": "Book 9, lines ...",
+    "image": "/polyphemus.jpg",
+    "imageCredit": "Arnold Böcklin, Odysseus and Polyphemus (1896), Museum of Fine Arts, Boston",
+    "setup": "You are Odysseus. You blinded the Cyclops Polyphemus and escaped his cave by hiding your men under his sheep, and he still thinks your name is Nobody. Now your ship is pulling away from the shore, and he is raging on the cliffs.",
+    "choices": [
+      { "id": "silent", "text": "Row away in silence" },
+      { "id": "shout", "text": "Shout your real name at Polyphemus" }
+    ],
+    "poemChoice": "shout",
+    "analysis": [
+      "Analysis..."
+    ]
+  },
+  {
     "id": "cattle-of-helios",
     "title": "The Cattle of Helios",
-    "citation": "Book 12, lines 260-419",
+    "citation": "Book ... lines ...",
     "image": "/cattle_of_helios.jpg",
     "imageCredit": "Sanctuary of Echoes Art",
     "setup": "Your ship is stranded on Thrinacia, the island where the sun god Helios keeps his cattle. The winds have you trapped here for a month and the food is gone. Circe and Tiresias have both warned you that eating the cattle will curse you and your crew.",
@@ -14,6 +62,38 @@
     "analysis": [
       "put analysis here",
       "more analysis"
+    ]
+  },
+  {
+    "id": "calypso",
+    "title": "Calypso's Offer",
+    "citation": "Book 5, lines ...",
+    "image": "/calypso.jpg",
+    "imageCredit": "Arnold Böcklin, Odysseus and Calypso (1882)",
+    "setup": "You are Odysseus. After the shipwreck you washed up on the island of the goddess Calypso, and you have been there for seven years. The gods have ordered her to let you go home, but she tells you that if you stay with her, she will make you immortal and ageless.",
+    "choices": [
+      { "id": "leave", "text": "Leave for Ithaca and stay mortal" },
+      { "id": "stay", "text": "Stay with Calypso and become immortal" }
+    ],
+    "poemChoice": "leave",
+    "analysis": [
+      "Analysis..."
+    ]
+  },
+  {
+    "id": "return-to-ithaca",
+    "title": "Return to Ithaca",
+    "citation": "Books 17–18, lines ...",
+    "image": "/return_to_ithaca.jpg",
+    "imageCredit": "Claude Lorrain, The Embarkation of Ulysses (1646), Musée du Louvre, Paris",
+    "setup": "You are Odysseus, home at last after twenty years. Athena has disguised you as an old beggar, and the suitors who want to marry your wife are feasting in your hall. When you ask them for food, the suitor Antinous insults you and throws a footstool at you.",
+    "choices": [
+      { "id": "endure", "text": "Endure it and keep your disguise" },
+      { "id": "fight", "text": "Fight back and reveal who you are" }
+    ],
+    "poemChoice": "endure",
+    "analysis": [
+      "Analysis..."
     ]
   }
 ]

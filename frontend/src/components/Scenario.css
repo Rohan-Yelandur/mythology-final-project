@@ -92,3 +92,22 @@
 .scenario-reveal p + p {
   margin-top: 0.75rem;
 }
+
+.scenario-continue {
+  display: block;
+  margin: 3rem auto 0;
+  padding: 1rem 3rem;
+  border: 3px solid #d4a64a;
+  background: none;
+  color: #d4a64a;
+  font: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+}
+
+.scenario-continue:hover {
+  background: #d4a64a;
+  color: black;
+}

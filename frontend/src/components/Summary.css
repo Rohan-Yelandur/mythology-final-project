@@ -1,0 +1,52 @@
+.summary {
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  color: #f1e6cf;
+  font-family: var(--font-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.summary-heading {
+  margin: 0 0 1rem;
+  font-family: var(--font-main);
+  font-size: 2.5rem;
+  color: #d4a64a;
+  text-align: center;
+}
+
+.summary-score {
+  text-align: center;
+}
+
+.summary h3 {
+  margin: 1.5rem 0 0.25rem;
+  color: #d4a64a;
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+}
+
+.summary-button {
+  align-self: center;
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  border: 3px solid #d4a64a;
+  background: none;
+  color: #d4a64a;
+  font: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+}
+
+.summary-button:hover {
+  background: #d4a64a;
+  color: black;
+}

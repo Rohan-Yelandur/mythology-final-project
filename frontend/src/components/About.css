@@ -20,3 +20,28 @@
   color: #d4a64a;
   text-align: center;
 }
+
+.about-map {
+  align-self: center;
+  width: min(100vw - 2rem, 50rem);
+  margin-top: 2rem;
+}
+
+.about-button {
+  align-self: center;
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  border: 3px solid #d4a64a;
+  background: none;
+  color: #d4a64a;
+  font: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+}
+
+.about-button:hover {
+  background: #d4a64a;
+  color: black;
+}

@@ -1,6 +1,6 @@
 import './About.css';
 
-function About() {
+function About({ started, onStart }) {
   return (
     <section className="about">
       <h2 className="about-heading">The Journey Ahead</h2>
@@ -14,6 +14,12 @@ function About() {
         Each scenario will present you with two choices, and you can pick whichever feels right. After you choose, you'll see
         what happened in the original story, how all other players chose, and what the choices you made mean.
       </p>
+      <img className="about-map" src="/greece_map.png" alt="Map of Odysseus' possible route home across the Mediterranean" />
+      {!started && (
+        <button className="about-button" onClick={onStart}>
+          Set sail
+        </button>
+      )}
     </section>
   );
 }
